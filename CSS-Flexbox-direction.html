@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Flexbox & Flex Direction</title>
+    <style>
+        .item{
+            display: block;
+            color: #fff;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 19px;
+            background: #F44336;
+        }
+        .flex-2 .item{ background: #ffc107 }
+        .flex-1{
+            display: flex;
+            flex-direction:column; /* Flex Direction vertical*/
+        }
+        .flex-2{
+            display: flex;
+            flex-direction:row; /* Flex Direction Horizental*/
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-direction</h1>
+        <h2>flex-direction:colum</h2>
+        <div class="flex-1">
+            <div class="item">1</div>
+            <div class="item">2</div>
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+            <div class="item">8</div>
+        </div>
+
+        <h2>flex-direction:row</h2>
+        <div class="flex-2">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+            </div>
+</body>
+</html>

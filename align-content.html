@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Align Content</title>
+    <style>
+        .item{
+            display: block;
+            color: #fff;
+            width: 100px;
+            text-align: center;
+            font-family: Arial;
+            font-weight: bold;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            font-size: 19px;
+            background: #F44336;
+        }
+        div[class^="flex-"]{
+            margin: 15px 0;
+            height: 250px;
+            border: 2px solid #000;
+            flex-wrap: wrap;
+
+        }
+        .flex-2 .item,.flex-4 .item{ background: #ffc107 }
+        .flex-1{
+            display: flex;
+            align-content: space-between;
+        }
+        .flex-2{
+            display: flex;
+            align-content: space-around;
+
+
+        }
+        .flex-3{
+            display: flex;
+            align-content: stretch;
+
+
+
+        }
+        .flex-4{
+            display: flex;
+            align-content: center;
+
+        }
+        .flex-5{
+            display: flex;
+            align-content: flex-start;
+
+        }
+        .flex-6{
+            display: flex;
+            align-content: flex-end;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>align-content <small><sub>all containers should be flex-wrap: wrap</sub></small> </h1>
+        <h2>align-content: space-between</h2>
+        <div class="flex-1">
+                <div class="item">1<br>1</div>
+                <div class="item">2<br>2<br>2</div>
+                <div class="item">3</div>
+        </div>
+        <h2>align-content: space-around</h2>
+        <div class="flex-2">
+                <div class="item">1<br>1</div>
+                <div class="item">2<br>2<br>2</div>
+                <div class="item">3</div>
+            </div>
+            <h2>align-content: stretch</h2>
+            <div class="flex-3">
+                    <div class="item">1<br>1</div>
+                    <div class="item">2<br>2<br>2</div>
+                    <div class="item">3</div>
+                </div>
+                <h2> align-content: center</h2>
+            <div class="flex-4">
+                    <div class="item">1<br>1</div>
+                    <div class="item">2<br>2<br>2</div>
+                    <div class="item">3</div>
+                </div>
+
+                <h2>align-content: flex-start</h2>
+            <div class="flex-5">
+                    <div class="item">1<br>1</div>
+                    <div class="item">2<br>2<br>2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                </div>
+                <h2>align-content: flex-end</h2>
+            <div class="flex-6">
+                    <div class="item">1<br>1</div>
+                    <div class="item">2<br>2<br>2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                </div>
+</body>
+</html>

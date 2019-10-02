@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Align Items</title>
+    <style>
+        .item{
+            display: block;
+            color: #fff;
+            width: 100px;
+            text-align: center;
+            font-family: Arial;
+            font-weight: bold;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            font-size: 19px;
+            background: #F44336;
+        }
+        div[class^="flex-"]{
+            margin: 15px 0;
+            height: 250px;
+            border: 2px solid #000;
+
+
+        }
+        .flex-2 .item,.flex-4 .item{ background: #ffc107 }
+        .flex-1{
+            display: flex;
+            align-items: center; /*Center Items vertically if they don't have the same height*/
+        }
+        .flex-2{
+            display: flex;
+            align-items: flex-start; /*position Items in top  if they don't have the same height*/
+
+
+        }
+        .flex-3{
+            display: flex;
+            align-items: flex-end;/*position Items in bottom  if they don't have the same height*/
+
+
+        }
+        .flex-4{
+            display: flex;
+            align-items: stretch; /*equilize the hight of items*/
+
+        }
+        .flex-5{
+            display: flex;
+            align-items: baseline; /*I thinks the same item-2*/
+
+        }
+    </style>
+</head>
+<body>
+    <h1>align-items</h1>
+        <h2>align-items: center</h2>
+        <div class="flex-1">
+                <div class="item">1<br>1</div>
+                <div class="item">2<br>2<br>2</div>
+                <div class="item">3</div>
+        </div>
+        <h2>align-items: flex-start</h2>
+        <div class="flex-2">
+                <div class="item">1<br>1</div>
+                <div class="item">2<br>2<br>2</div>
+                <div class="item">3</div>
+            </div>
+            <h2>align-items: flex-end</h2>
+            <div class="flex-3">
+                    <div class="item">1<br>1</div>
+                    <div class="item">2<br>2<br>2</div>
+                    <div class="item">3</div>
+                </div>
+                <h2>align-items: stretch</h2>
+            <div class="flex-4">
+                    <div class="item">1<br>1</div>
+                    <div class="item">2<br>2<br>2</div>
+                    <div class="item">3</div>
+                </div>
+
+                <h2>align-items: baseline</h2>
+            <div class="flex-5">
+                    <div class="item">1<br>1</div>
+                    <div class="item">2<br>2<br>2</div>
+                    <div class="item">3</div>
+                    <div class="item">4</div>
+                </div>
+</body>
+</html>

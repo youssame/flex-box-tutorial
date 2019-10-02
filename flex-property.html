@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Property</title>
+    <style>
+        .item{
+            display: block;
+            color: #fff;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 19px;
+            background: #F44336;
+        }
+        .item:nth-child(2){background: rgb(224, 193, 12);}
+        .flex-1{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+        <h1>flex = flex-grow  flex-shrink  flex-basis <small><sub>style="flex: 0 0 200px"</sub></small> </h1>
+
+        <div class="flex-1">
+            <div class="item">1</div>
+            <div class="item" style="flex:1 0 200px">2</div> <!-- Specify the initial width-->
+            <div class="item">3</div>
+            <div class="item">4</div>
+            <div class="item">5</div>
+            <div class="item">6</div>
+            <div class="item">7</div>
+
+        </div>
+
+</body>
+</html>

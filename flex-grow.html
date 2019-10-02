@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flex Frow</title>
+    <style>
+        .item{
+            display: block;
+            color: #fff;
+            width: 100px;
+            height: 100px;
+            line-height: 100px;
+            text-align: center;
+            font-family: Arial;
+            font-weight: bold;
+            font-size: 19px;
+            background: #F44336;
+        }
+        .item:nth-child(2){background: rgb(224, 193, 12);}
+        .item:nth-child(3){background: rgb(37, 224, 12);}
+        .flex-1{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+        <h1>flex-grow <small><sub>style="flex-grow: 5..."</sub></small> </h1>
+
+        <div class="flex-1">
+            <div class="item"  style="flex-grow: 1">1</div>
+            <div class="item"  style="flex-grow: 1">2</div>
+            <div class="item"  style="flex-grow: 8">3</div>
+
+        </div>
+
+</body>
+</html>
